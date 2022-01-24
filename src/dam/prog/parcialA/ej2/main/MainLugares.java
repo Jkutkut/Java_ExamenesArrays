@@ -5,30 +5,26 @@ import java.util.Scanner;
 import dam.prog.parcialA.ej2.pojo.Lugar;
 
 /**
- * 2. Un alumno de la UEM quiere almacenar lugares de Europa que visitar antes de los 40. 
+ * Un alumno de la UEM quiere almacenar lugares de Europa que visitar antes de los 40. 
  * Se debe crear un programa que:
- * 
- * solicite la cantidad de lugares que se van a almacenar
+ * <li>solicite la cantidad de lugares que se van a almacenar
  * para cada lugar solicite la siguiente información:
- * o ciudad (por ej: Ibiza)
- * o país (por ej: España)
- * o prioridad (del 1 al 10)
- * o motivo (por ej: Decantarse entre lo David Guettero y el hipismo del Siglo XXI, 
- * por no hablar de sus espectaculares calas y originales mercadillos)
- * - muestre los lugares almacenados en el array
- * - indique cuál es el lugar de España con mayor prioridad.
+ * ciudad (por ej: Ibiza),  país (por ej: España), prioridad (del 1 al 10), motivo (por ej: Decantarse entre lo David Guettero y el hipismo del Siglo XXI, por no hablar de sus espectaculares calas y originales mercadillos)
+ * <li> muestre los lugares almacenados en el array
+ * <li> indique cuál es el lugar de España con mayor prioridad.
+ * <br>
  * Comprobación de datos con excepciones, crear las que se necesiten:
- * - la cantidad debe ser un entero positivo  
- * - el motivo no tenga más de 150 caracteres.
- * - la prioridad debe ser un valor entero entre 1 y 10.
+ * <li> la cantidad debe ser un entero positivo  
+ * <li> el motivo no tenga más de 150 caracteres.
+ * <li> la prioridad debe ser un valor entero entre 1 y 10.
+ * <br>
  * No olvidar:
- * - Nombrar a los elementos (clases, métodos, variables, constantes...) correctamente.
- * - No crear variables dentro de bucles.
- * - Cerrar el Scanner.
- * - Entregar el código sin errores y si puede ser sin warnings (Salvo en las excepciones 
- * propias).
- * - Probar el programa para comprobar que funciona.
- * 
+ * <li> Nombrar a los elementos (clases, métodos, variables, constantes...) correctamente.
+ * <li> No crear variables dentro de bucles.
+ * <li> Cerrar el Scanner.
+ * <li> Entregar el código sin errores y si puede ser sin warnings (Salvo en las excepciones propias).
+ * <li> Probar el programa para comprobar que funciona.
+ * <br>
  * @author "Jkutkut -- Jorge Re"
  *
  */
