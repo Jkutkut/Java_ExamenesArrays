@@ -5,29 +5,7 @@ import java.util.Scanner;
 import dam.prog.parcialA.ej2.pojo.Lugar;
 
 /**
- * 2. Un alumno de la UEM quiere almacenar lugares de Europa que visitar antes de los 40. 
- * Se debe crear un programa que:
  * 
- * solicite la cantidad de lugares que se van a almacenar
- * para cada lugar solicite la siguiente información:
- * o ciudad (por ej: Ibiza)
- * o país (por ej: España)
- * o prioridad (del 1 al 10)
- * o motivo (por ej: Decantarse entre lo David Guettero y el hipismo del Siglo XXI, 
- * por no hablar de sus espectaculares calas y originales mercadillos)
- * - muestre los lugares almacenados en el array
- * - indique cuál es el lugar de España con mayor prioridad.
- * Comprobación de datos con excepciones, crear las que se necesiten:
- * - la cantidad debe ser un entero positivo  
- * - el motivo no tenga más de 150 caracteres.
- * - la prioridad debe ser un valor entero entre 1 y 10.
- * No olvidar:
- * - Nombrar a los elementos (clases, métodos, variables, constantes...) correctamente.
- * - No crear variables dentro de bucles.
- * - Cerrar el Scanner.
- * - Entregar el código sin errores y si puede ser sin warnings (Salvo en las excepciones 
- * propias).
- * - Probar el programa para comprobar que funciona.
  * 
  * @author "Jkutkut -- Jorge Re"
  *
@@ -47,6 +25,8 @@ public class MainFestivales {
 		
 		rellenaFestivales(festivales);
 		
+		mostrarFestivales(festivales);
+		
 		Lugar mejor = getFestivalesEntreFiestas(festivales, PAIS_SELECCIONADO);
 		
 		if (mejor != null) {
@@ -54,22 +34,25 @@ public class MainFestivales {
 			System.out.print(mejor);
 		}
 		else {
-			System.out.println("No hay ningún lugar en " + PAIS_SELECCIONADO);
+			System.out.println("No hay ningún festival en " + PAIS_SELECCIONADO);
 		}
 		
 		sc.close();
-		
-		try {
-//			Lugar p = new Lugar("c", "p", 0, "hola");
-//			Lugar p = new Lugar("c", "p", 1, "jfdskljflkasjflkñasjlfjaslñfj lajf lkañdsjfa jkdfñlaj ñfjas ñdjflka djflñas djfñlakj dñflja ñdlfj dklñjf añjdñl jafñdlsjf añldj flñsadkj flñasj dñlfaj ldkfjal dñjflñkadj lfñkajdlkfjad ñjfañl jflñaj dklfjañd jflkaj flña");
-			Lugar p = new Lugar("c", "p", 2, "hola");
-			System.out.println(p);
-		}
-		catch (Exception e) {
-			System.err.println(e.getMessage());
-		}
 	}
 	
+	private static void mostrarFestivales(Lugar[] festivales) {
+		if (festivales.length == 0) {
+			System.out.println("No hay festivales introducidos");
+			return;
+		}
+		
+		System.out.println("Los festivales almacenados son:");
+		for (int i = 0; i < festivales.length; i++) {
+			System.out.println(festivales[i]);
+		}
+		
+	}
+
 	private static Lugar getFestivalesEntreFiestas(Lugar[] lugares, String pais) {
 		int posMejorCiudad = -1;
 		for (int i = 0; i < lugares.length; i++) {
