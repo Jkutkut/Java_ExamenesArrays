@@ -4,14 +4,15 @@ public class Festival {
 	
 	public static final int CARTEL_MAX_LEN = 30;
 	public static final int MES_MIN = 1;
-	public static final int MES_MAX = 10;
+	public static final int MES_MAX = 12;
 
 	private String nombre;
 	private String ciudad;
 	private int mes;
 	private String cartel;
 	
-	public Festival(String nombre, String ciudad, int mes, String cartel) throws Exception {
+	public Festival(String nombre, String ciudad, int mes, String cartel)
+			throws InvalidCartelException, InvalidMesException {
 		this.nombre = nombre;
 		this.ciudad = ciudad;
 		
@@ -29,7 +30,7 @@ public class Festival {
 		return prioridad >= MES_MIN && prioridad <= MES_MAX;
 	}
 	
-	public String getPais() {
+	public String getNombre() {
 		return nombre;
 	}
 	
@@ -39,21 +40,16 @@ public class Festival {
 
 
 	// SETTERS
-	private void setCartel(String cartel) throws Exception {
+	private void setCartel(String cartel) throws InvalidCartelException {
 		if (!Festival.cartelIsValid(cartel)) {
-			throw new Exception("El cartel no puede tener más de " + CARTEL_MAX_LEN + " caracteres.");
+			throw new InvalidCartelException(cartel);
 		}
 		this.cartel = cartel;
 	}
 	
-	private void setMes(int mes) throws Exception {
+	private void setMes(int mes) throws InvalidMesException {
 		if (!mesIsValid(mes)) {
-			throw new Exception(
-				String.format(
-					"El mes tiene que estar en el intervalo [%d, %d]",
-					MES_MIN, MES_MAX
-				)
-			);
+			throw new InvalidMesException(mes);
 		}
 		this.mes = mes;
 	}
