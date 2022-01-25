@@ -66,10 +66,11 @@ public class Ejercicio {
 		
 		for (int i = 0, j; i < matriz.length; i++) {
 			for (j = 0; j < matriz[i].length; j++) {
-				matriz[i][j] = (r.nextInt(40) + 1) * 5;
-				if (matriz[i][j] % 2 == 0) {
-					matriz[i][j]--;
-				}
+//				matriz[i][j] = (r.nextInt(40) + 1) * 5;
+//				if (matriz[i][j] % 2 == 0) {
+//					matriz[i][j] -= 5;
+//				}
+				matriz[i][j] = r.nextInt(20) * 10 + 5;
 			}
 		}
 	}
