@@ -1,4 +1,4 @@
-package dam.prog.parcialA.ej2.pojo;
+package dam.prog.parcial_2021_A.ej2.pojo;
 
 public class Lugar {
 	

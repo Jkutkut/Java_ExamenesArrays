@@ -1,15 +1,15 @@
-package dam.a.ej2.pojos;
+package dam.prog.parcial_2022_A.ej2.pojos;
 
 /**
  * 
- * @author Jorge Re González
+ * @author Jorge Re Gonzï¿½lez
  *
  */
 public class InvalidContactosException extends NumberFormatException {
 	public InvalidContactosException() {
 		super(
 			String.format(
-					"El número de contactos tiene que ser un entero en el intervalo [%d, %d].",
+					"El nï¿½mero de contactos tiene que ser un entero en el intervalo [%d, %d].",
 					Perfil.MIN_CONTACTOS, Perfil.MAX_CONTACTOS
 			)
 		);

@@ -1,15 +1,15 @@
-package dam.a.ej2.pojos;
+package dam.prog.parcial_2022_A.ej2.pojos;
 
 /**
  * 
- * @author Jorge Re González
+ * @author Jorge Re Gonzï¿½lez
  *
  */
 public class InvalidStringLengthException extends Exception {
 	public InvalidStringLengthException(String strName) {
 		super(
 			String.format(
-				"El atributo %s no puede tener más de %d caracteres.",
+				"El atributo %s no puede tener mï¿½s de %d caracteres.",
 				strName, Perfil.STRING_MAX_LEN
 			)
 		);

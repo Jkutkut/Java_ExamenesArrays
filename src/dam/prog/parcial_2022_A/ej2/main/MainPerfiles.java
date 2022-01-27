@@ -1,13 +1,13 @@
-package dam.a.ej2.main;
+package dam.prog.parcial_2022_A.ej2.main;
 
 import java.util.Scanner;
 
-import dam.a.ej2.pojos.InvalidCiudadException;
-import dam.a.ej2.pojos.Perfil;
+import dam.prog.parcial_2022_A.ej2.pojos.InvalidCiudadException;
+import dam.prog.parcial_2022_A.ej2.pojos.Perfil;
 
 /**
  * 
- * @author Jorge Re González
+ * @author Jorge Re Gonzï¿½lez
  *
  */
 public class MainPerfiles {
@@ -38,7 +38,7 @@ public class MainPerfiles {
 				peor = perfiles[i];
 			}
 		}
-		System.out.println("El perfil con menor número de contactos es:\n" + peor);
+		System.out.println("El perfil con menor nï¿½mero de contactos es:\n" + peor);
 	}
 
 
@@ -50,7 +50,7 @@ public class MainPerfiles {
 		int nContactos;
 		
 		for (int i = 0; i < perfiles.length; i++) {
-			System.out.printf("Introduce los datos del %dº perfil:\n", i);
+			System.out.printf("Introduce los datos del %dï¿½ perfil:\n", i);
 			nombre = getString(" - Nombre: ", 0, Perfil.STRING_MAX_LEN);
 			puesto = getString(" - Puesto: ", 0, Perfil.STRING_MAX_LEN);
 			ciudad = getCiudad(" - Ciudad: ");
@@ -62,8 +62,8 @@ public class MainPerfiles {
 			catch (Exception e) {
 				System.out.println("Error inesperado:");
 				System.out.println(e.getMessage());
-				System.out.println("Inténtelo de nuevo");
-				i--; // Para repetir esta iteración del bucle
+				System.out.println("Intï¿½ntelo de nuevo");
+				i--; // Para repetir esta iteraciï¿½n del bucle
 			}
 		}
 	}
@@ -108,10 +108,10 @@ public class MainPerfiles {
 			str = sc.nextLine();
 			
 			if (str.length() < minLen) {
-				System.out.println("La longitud mínima es de " + minLen + " caracteres\n");
+				System.out.println("La longitud mï¿½nima es de " + minLen + " caracteres\n");
 			}
 			else if (str.length() > maxLen) {
-				System.out.println("La longitud máxima es de " + maxLen + " caracteres.\n");
+				System.out.println("La longitud mï¿½xima es de " + maxLen + " caracteres.\n");
 			}
 			else {
 				return str;
@@ -135,7 +135,7 @@ public class MainPerfiles {
 				return Integer.parseInt(sc.nextLine());
 			}
 			catch (NumberFormatException e) {
-				System.out.println("El valor no es un número entero válido.\n");
+				System.out.println("El valor no es un nï¿½mero entero vï¿½lido.\n");
 			}
 		}
 	}
@@ -154,7 +154,7 @@ public class MainPerfiles {
 				isNotNatural = false;
 			}
 			else {
-				System.out.println("El número tiene que ser un natural -> [0, inf)\n");
+				System.out.println("El nï¿½mero tiene que ser un natural -> [0, inf)\n");
 			}
 		}
 		return n;
@@ -183,7 +183,7 @@ public class MainPerfiles {
 			}
 			else {
 				System.out.printf(
-					"El número tiene que ser un natural en el rango [%d, %d]\n\n",
+					"El nï¿½mero tiene que ser un natural en el rango [%d, %d]\n\n",
 					min, max
 				);
 			}

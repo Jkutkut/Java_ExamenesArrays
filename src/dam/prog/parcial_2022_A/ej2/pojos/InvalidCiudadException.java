@@ -1,10 +1,10 @@
-package dam.a.ej2.pojos;
+package dam.prog.parcial_2022_A.ej2.pojos;
 
 import java.util.Arrays;
 
 /**
  * 
- * @author Jorge Re González
+ * @author Jorge Re Gonzï¿½lez
  *
  */
 public class InvalidCiudadException extends Exception {

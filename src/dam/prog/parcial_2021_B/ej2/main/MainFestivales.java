@@ -1,11 +1,11 @@
-package dam.prog.parcialB.ej2.main;
+package dam.prog.parcial_2021_B.ej2.main;
 
 import java.util.Arrays;
 
-import dam.prog.parcialB.ej2.scanner.SuperScanner;
-import dam.prog.parcialB.ej2.pojo.Festival;
-import dam.prog.parcialB.ej2.pojo.InvalidCartelException;
-import dam.prog.parcialB.ej2.pojo.InvalidMesException;
+import dam.prog.parcial_2021_B.ej2.scanner.SuperScanner;
+import dam.prog.parcial_2021_B.ej2.pojo.Festival;
+import dam.prog.parcial_2021_B.ej2.pojo.InvalidCartelException;
+import dam.prog.parcial_2021_B.ej2.pojo.InvalidMesException;
 
 /**
  * 2. Un alumno de la UEM quiere almacenar los festivales de música europeos a los que le gustaría asistir en el 2021.

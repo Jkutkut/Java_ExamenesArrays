@@ -1,11 +1,11 @@
-package dam.a.ej1;
+package dam.prog.parcial_2022_A.ej1;
 
 import java.util.Random;
 import java.util.Scanner;
 
 /**
  * 
- * @author Jorge Re González
+ * @author Jorge Re Gonzï¿½lez
  *
  */
 public class Ejercicio1 {
@@ -15,7 +15,7 @@ public class Ejercicio1 {
 	public static final int MAX = 100;
 	
 	/**
-	 * Número de dígitos a reservar para cada elemento de la matriz a la hora de la representación
+	 * Nï¿½mero de dï¿½gitos a reservar para cada elemento de la matriz a la hora de la representaciï¿½n
 	 */
 	public static final int DIGITS = 3;
 	
@@ -39,13 +39,13 @@ public class Ejercicio1 {
 	}
 	
 	/**
-	 * Muestra qué triángulo (formado por la diagonal inversa) tiene suma mayor
+	 * Muestra quï¿½ triï¿½ngulo (formado por la diagonal inversa) tiene suma mayor
 	 * @param matriz - Matriz cuadrada a usar
 	 */
 	private static void printSumTria(int[][] matriz) {
 		int[] sumas = {0, 0};
 		
-		System.out.println("Calculando la suma de los triángulos de la matriz...");
+		System.out.println("Calculando la suma de los triï¿½ngulos de la matriz...");
 		for (int i = 0, j; i < matriz.length - 1; i++) {
 			for (j = 0; j < matriz[i].length - i - 1; j++) {
 				sumas[SUPERIOR] += matriz[i][j];
@@ -53,15 +53,15 @@ public class Ejercicio1 {
 			}
 		}
 		
-		System.out.printf("- Triángulo superior: %d\n- Triángulo inferior: %d\n", sumas[SUPERIOR], sumas[INFERIOR]);
+		System.out.printf("- Triï¿½ngulo superior: %d\n- Triï¿½ngulo inferior: %d\n", sumas[SUPERIOR], sumas[INFERIOR]);
 		
 		System.out.print("Por tanto, ");
 		if (sumas[SUPERIOR] == sumas[INFERIOR]) {
-			System.out.println("los dos triángulos son iguales");
+			System.out.println("los dos triï¿½ngulos son iguales");
 		}
 		else {
 			System.out.printf(
-				"el triángulo con mayor suma es el %s\n",
+				"el triï¿½ngulo con mayor suma es el %s\n",
 				(sumas[SUPERIOR] > sumas[INFERIOR])? "superior" : "inferior"
 			);
 		}
@@ -93,7 +93,7 @@ public class Ejercicio1 {
 				return Integer.parseInt(sc.nextLine());
 			}
 			catch (NumberFormatException e) {
-				System.out.println("El valor no es un número entero válido.\n");
+				System.out.println("El valor no es un nï¿½mero entero vï¿½lido.\n");
 			}
 		}
 	}
@@ -112,7 +112,7 @@ public class Ejercicio1 {
 				isNotNatural = false;
 			}
 			else {
-				System.out.println("El número tiene que ser un natural -> [0, inf)\n");
+				System.out.println("El nï¿½mero tiene que ser un natural -> [0, inf)\n");
 			}
 		}
 		return n;
@@ -121,7 +121,7 @@ public class Ejercicio1 {
 	/**
 	 * Genera un String representando la matriz dada como argumento
 	 * @param arr -- matriz
-	 * @return String representando la matriz (reservando DIGITS caracteres para representar cada número).
+	 * @return String representando la matriz (reservando DIGITS caracteres para representar cada nï¿½mero).
 	 */
 	public static String prettyPrint(int arr[][]) {
 		String str = "{\n";

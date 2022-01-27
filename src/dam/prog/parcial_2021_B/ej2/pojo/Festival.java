@@ -1,4 +1,4 @@
-package dam.prog.parcialB.ej2.pojo;
+package dam.prog.parcial_2021_B.ej2.pojo;
 
 public class Festival {
 	

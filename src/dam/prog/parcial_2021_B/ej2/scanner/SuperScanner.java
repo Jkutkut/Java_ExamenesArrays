@@ -1,4 +1,4 @@
-package dam.prog.parcialB.ej2.scanner;
+package dam.prog.parcial_2021_B.ej2.scanner;
 
 import java.io.File;
 import java.io.FileNotFoundException;

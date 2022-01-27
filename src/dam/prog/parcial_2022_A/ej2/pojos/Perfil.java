@@ -1,8 +1,8 @@
-package dam.a.ej2.pojos;
+package dam.prog.parcial_2022_A.ej2.pojos;
 
 /**
  * 
- * @author Jorge Re González
+ * @author Jorge Re Gonzï¿½lez
  *
  */
 public class Perfil {
@@ -10,7 +10,7 @@ public class Perfil {
 	public static final String[] CIUDADES = {
 		"Madrid",
 		"Barcelona",
-		"Málaga",
+		"Mï¿½laga",
 		"Valladolid"
 	};
 	public static final int STRING_MAX_LEN = 45;
