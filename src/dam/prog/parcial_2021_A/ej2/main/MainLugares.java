@@ -1,8 +1,8 @@
-package dam.prog.parcialA.ej2.main;
+package dam.prog.parcial_2021_A.ej2.main;
 
 import java.util.Scanner;
 
-import dam.prog.parcialA.ej2.pojo.Lugar;
+import dam.prog.parcial_2021_A.ej2.pojo.Lugar;
 
 /**
  * Un alumno de la UEM quiere almacenar lugares de Europa que visitar antes de los 40. 

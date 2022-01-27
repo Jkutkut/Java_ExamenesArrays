@@ -1,4 +1,4 @@
-package dam.prog.parcialA.ej1;
+package dam.prog.parcial_2021_A.ej1;
 
 import java.util.Random;
 import java.util.Scanner;
